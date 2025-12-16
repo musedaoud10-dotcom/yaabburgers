@@ -1,20 +1,13 @@
-// Mobile nav toggle
-const navToggle = document.querySelector(".nav-toggle");
-const nav = document.getElementById("mainNav");
+document.addEventListener("DOMContentLoaded", () => {
+  const yearSpan = document.getElementById("year");
+  if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 
-if (navToggle && nav) {
-  navToggle.addEventListener("click", () => {
-    nav.classList.toggle("open");
-  });
+  const toggle = document.querySelector(".nav-toggle");
+  const nav = document.getElementById("mainNav");
 
-  // Close nav when clicking a link on mobile
-  nav.querySelectorAll("a").forEach((link) => {
-    link.addEventListener("click", () => {
-      nav.classList.remove("open");
+  if (toggle && nav) {
+    toggle.addEventListener("click", () => {
+      nav.classList.toggle("open");
     });
-  });
-}
-
-// Year in footer
-const yearSpan = document.getElementById("year");
-if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+  }
+});
