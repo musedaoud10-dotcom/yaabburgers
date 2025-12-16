@@ -71,9 +71,7 @@ a {
   height: 46px;
 }
 
-/* no logo text – logo only */
-
-/* nav */
+/* logo text removed – image only */
 
 .nav {
   display: flex;
@@ -148,15 +146,15 @@ a {
   overflow: hidden;
 }
 
-/* watermark logo on home hero */
+/* WATERMARK LOGO on home page */
 .hero-home::before {
   content: "";
   position: absolute;
   inset: 0;
   background: url("../images/yaab-burgers-logo.png") no-repeat;
-  background-position: right 6% center;
-  background-size: 420px auto;
-  opacity: 0.05;
+  background-position: right 8% center; /* tweak position if you like */
+  background-size: 520px auto;         /* tweak size if you like */
+  opacity: 0.18;                        /* stronger so it’s clearly visible */
   pointer-events: none;
 }
 
