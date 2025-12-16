@@ -70,7 +70,7 @@ a {
 }
 
 .logo img {
-  height: 44px;
+  height: 60px; /* slightly larger header logo */
 }
 
 .nav {
@@ -149,7 +149,7 @@ a {
   background: var(--text);
 }
 
-/* HERO – minimal, with logo image in the middle */
+/* HERO – minimal */
 
 .hero-home {
   position: relative;
@@ -178,7 +178,7 @@ a {
   z-index: 1;
 }
 
-/* visually hide the h1 text – SEO friendly, but logo image is what you see */
+/* visually hide the h1 text – SEO friendly */
 .hero-inner h1 {
   position: absolute;
   width: 1px;
@@ -190,21 +190,14 @@ a {
   border: 0;
 }
 
-.hero-logo {
-  margin-bottom: 0.9rem;
-}
-
-.hero-logo img {
-  height: 88px;
-  margin: 0 auto;
-}
-
+/* ⬇️ this is your “Burgers with a Twist” text */
 .hero-inner p {
   margin-top: 0.2rem;
-  font-size: 0.95rem;
+  font-size: 1.4rem;      /* larger */
+  font-weight: 700;       /* bold */
   text-transform: uppercase;
-  letter-spacing: 0.14em;
-  color: var(--muted);
+  letter-spacing: 0.18em;
+  color: #f7f3ec;         /* brighter so it pops */
 }
 
 .hero-cta {
