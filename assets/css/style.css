@@ -71,23 +71,9 @@ a {
   height: 46px;
 }
 
-.logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.1;
-}
+/* no logo text – logo only */
 
-.logo-text span:first-child {
-  font-weight: 600;
-  font-size: 0.95rem;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-}
-
-.logo-text span:last-child {
-  font-size: 0.8rem;
-  color: var(--muted);
-}
+/* nav */
 
 .nav {
   display: flex;
@@ -158,6 +144,20 @@ a {
 .hero-home {
   background: linear-gradient(135deg, #ffe1cc, #fdf7ec);
   padding: 3.5rem 0 3.75rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* watermark logo on home hero */
+.hero-home::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("../images/yaab-burgers-logo.png") no-repeat;
+  background-position: right 6% center;
+  background-size: 420px auto;
+  opacity: 0.05;
+  pointer-events: none;
 }
 
 .hero-grid {
@@ -260,6 +260,7 @@ a {
   box-shadow: var(--shadow-soft);
   border: 1px solid var(--border);
   position: relative;
+  z-index: 1; /* above watermark */
 }
 
 .hero-card h2 {
@@ -615,10 +616,6 @@ footer {
 @media (max-width: 720px) {
   .header-inner {
     padding-inline: 1rem;
-  }
-
-  .logo-text {
-    display: none;
   }
 
   .nav-toggle {
