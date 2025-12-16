@@ -70,7 +70,7 @@ a {
 }
 
 .logo img {
-  height: 75px; /* slightly larger header logo */
+  height: 60px;
 }
 
 .nav {
@@ -149,7 +149,7 @@ a {
   background: var(--text);
 }
 
-/* HERO – minimal */
+/* HERO – minimal home */
 
 .hero-home {
   position: relative;
@@ -190,14 +190,15 @@ a {
   border: 0;
 }
 
-/* ⬇️ this is your “Burgers with a Twist” text */
+/* Burgers with a Twist text */
+
 .hero-inner p {
   margin-top: 0.2rem;
-  font-size: 1.4rem;      /* larger */
-  font-weight: 700;       /* bold */
+  font-size: 1.4rem;
+  font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.18em;
-  color: #f7f3ec;         /* brighter so it pops */
+  color: #f7f3ec;
 }
 
 .hero-cta {
@@ -279,7 +280,39 @@ a {
   margin-top: 1.8rem;
 }
 
-/* MENU */
+/* ===== MENU PAGE (image centre, Asado style) ===== */
+
+.page-menu {
+  background: #000;
+  background-image: url("../images/menu-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.menu-sheet-section {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 3rem 1rem;
+}
+
+.menu-sheet-wrapper {
+  max-width: 720px;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.85);
+  border-radius: 4px;
+}
+
+.menu-sheet-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ===== TEXT MENU STYLES (kept in case you need them later) ===== */
 
 .menu-list {
   margin-bottom: 2rem;
@@ -525,5 +558,9 @@ footer {
 
   .info-grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .menu-sheet-section {
+    padding: 2rem 0.5rem;
   }
 }
