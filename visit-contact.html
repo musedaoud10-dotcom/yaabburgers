@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Visit &amp; Contact | Yaab Burgers</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+<body class="page-visit">
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/yaab-burgers-logo.png" alt="Yaab Burgers logo" />
+        <div class="logo-text">
+          <span>YAAB BURGERS</span>
+          <span>Berbere fried chicken, cooked to order.</span>
+        </div>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav id="mainNav" class="nav">
+        <ul>
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="story.html" class="nav-link">Our Story</a></li>
+          <li><a href="visit-contact.html" class="nav-link active">Visit / Contact</a></li>
+          <li><a href="#order" class="nav-link nav-cta">Order now</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Visit Yaab</h1>
+        <p class="page-hero-sub">
+          Swap the placeholder details below for your live address, hours, and delivery
+          links once everything is confirmed.
+        </p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container info-grid">
+        <article class="info-card">
+          <h2>Flagship kitchen</h2>
+          <p>
+            Example address (update this):<br/>
+            Unit 1, Eastgate<br/>
+            Bristol, BSX XXX
+          </p>
+          <ul class="info-list">
+            <li>Collection &amp; delivery available</li>
+            <li>Cooked to order, no reheats</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h2>Opening hours</h2>
+          <ul class="info-list">
+            <li>Mon–Thu · 5pm – 10pm</li>
+            <li>Fri–Sat · 5pm – 11pm</li>
+            <li>Sun · 5pm – 9pm</li>
+          </ul>
+          <p class="info-small">Adjust these to your real trading hours.</p>
+        </article>
+
+        <article class="info-card" id="order">
+          <h2>Order Yaab Burgers</h2>
+          <p>Replace the links below when you’re live on delivery platforms.</p>
+          <ul class="info-list">
+            <li>Deliveroo – link coming soon</li>
+            <li>Uber Eats – link coming soon</li>
+            <li>Just Eat – link coming soon</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container contact-layout">
+        <form class="contact-form"
+              action="mailto:hello@yaabburgers.com"
+              method="POST"
+              enctype="text/plain">
+          <h2>Contact &amp; enquiries</h2>
+
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="type">Enquiry type</label>
+            <select id="type" name="type">
+              <option>General question</option>
+              <option>Large order / catering</option>
+              <option>Partnership / dark kitchen</option>
+              <option>Press / media</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-note">
+            This uses your email app via <code>mailto:</code>. For a proper form with
+            confirmations, connect it to Formspree, Netlify Forms or similar.
+          </p>
+        </form>
+
+        <aside class="contact-aside">
+          <h2>Direct contact</h2>
+          <p>
+            Email: <a href="mailto:hello@yaabburgers.com">hello@yaabburgers.com</a><br />
+            Instagram: <a href="https://instagram.com/yaabburgers">@yaabburgers</a><br />
+            Phone: 0000 000 000 (update with your number)
+          </p>
+          <p class="contact-small">
+            We usually reply to partnership and event enquiries within 24–48 hours.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Yaab Burgers. All rights reserved.</span>
+      <span>Berbere fried chicken, cooked to order.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
