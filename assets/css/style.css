@@ -70,7 +70,7 @@ a {
 }
 
 .logo img {
-  height: 60px;
+  height: 44px;
 }
 
 .nav {
@@ -149,7 +149,7 @@ a {
   background: var(--text);
 }
 
-/* HERO – minimal with text only */
+/* HERO – minimal, with logo image in the middle */
 
 .hero-home {
   position: relative;
@@ -178,14 +178,29 @@ a {
   z-index: 1;
 }
 
+/* visually hide the h1 text – SEO friendly, but logo image is what you see */
 .hero-inner h1 {
-  font-size: clamp(2.8rem, 5vw, 3.6rem);
-  letter-spacing: 0.16em;
-  text-transform: uppercase;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.hero-logo {
+  margin-bottom: 0.9rem;
+}
+
+.hero-logo img {
+  height: 88px;
+  margin: 0 auto;
 }
 
 .hero-inner p {
-  margin-top: 0.7rem;
+  margin-top: 0.2rem;
   font-size: 0.95rem;
   text-transform: uppercase;
   letter-spacing: 0.14em;
