@@ -115,6 +115,30 @@ a {
   opacity: 1;
 }
 
+/* Order here button */
+
+.nav-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.45rem 1.3rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid #f7f3ec;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+}
+
+/* remove underline for button */
+.nav-cta::after {
+  display: none;
+}
+
+.nav-cta:hover {
+  background: #f7f3ec;
+  color: #0b0908;
+}
+
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -401,7 +425,7 @@ a {
   font-size: 0.93rem;
 }
 
-/* VISIT / HOURS / CONTACT */
+/* VISIT / CONTACT LAYOUT */
 
 .info-grid {
   display: grid;
@@ -442,6 +466,8 @@ a {
   margin-top: 0.4rem;
 }
 
+/* contact page layout */
+
 .contact-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
@@ -455,6 +481,10 @@ a {
   padding: 1.7rem 1.7rem 1.9rem;
   border: 1px solid rgba(59, 47, 39, 0.95);
   box-shadow: 0 18px 44px rgba(0, 0, 0, 0.75);
+}
+
+.contact-form h2 {
+  margin-bottom: 0.9rem;
 }
 
 .form-row {
