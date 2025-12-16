@@ -256,11 +256,11 @@ a {
   margin-bottom: 0.8rem;
 }
 
-/* MENU PAGE – sheet style */
+/* ===== MENU PAGE – sheet style ===== */
 
 .page-menu {
   background: #000;
-  background-image: url("../images/menu-bg.jpg"); /* optional */
+  background-image: url("../images/menu-bg.jpg"); /* optional background image */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -330,7 +330,7 @@ a {
   padding-bottom: 0.25rem;
 }
 
-/* Text menu styles inside sheet */
+/* text menu styles inside sheet */
 
 .menu-list {
   margin-bottom: 0.8rem;
@@ -383,6 +383,17 @@ a {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 2.2rem;
+}
+
+/* Our Story heading + spacing */
+
+.story-title {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+
+.story-columns p {
+  margin-bottom: 1rem;
 }
 
 .two-col p {
