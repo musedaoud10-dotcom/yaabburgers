@@ -1,18 +1,61 @@
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="logo">
-      <img src="assets/images/yaab-burgers-logo.png" alt="Yaab Burgers logo" />
-    </a>
-    <button class="nav-toggle" aria-label="Toggle navigation">
-      <span></span><span></span><span></span>
-    </button>
-    <nav id="mainNav" class="nav">
-      <ul>
-        <li><a href="menu.html" class="nav-link">Menu</a></li>
-        <li><a href="story.html" class="nav-link">About</a></li>
-        <li><a href="contact.html" class="nav-link">Contact</a></li>
-        <li><a href="#" class="nav-link nav-cta">Order here</a></li>
-      </ul>
-    </nav>
-  </div>
-</header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Yaab Burgers | Berbere Fried Chicken</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description"
+        content="Yaab Burgers – berbere fried chicken burgers in Bristol.">
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+</head>
+<body class="page-home">
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/images/yaab-burgers-logo.png" alt="Yaab Burgers logo" />
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="mainNav" class="nav">
+        <ul>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="story.html" class="nav-link">About</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <li><a href="#" class="nav-link nav-cta">Order here</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- MINIMAL HERO -->
+  <main>
+    <section class="hero hero-home">
+      <div class="hero-inner">
+        <!-- hidden for SEO/accessibility -->
+        <h1>Yaab Burgers</h1>
+
+        <p>Burgers with a Twist</p>
+        <a href="menu.html" class="btn btn-outline hero-cta">View menu</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Yaab Burgers. All rights reserved.</span>
+      <span>Berbere fried chicken burgers.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
