@@ -5,7 +5,7 @@
   <title>Yaab Burgers | Berbere Fried Chicken</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="description"
-        content="Yaab Burgers – damn tasty berbere fried chicken burgers. Crispy thighs, East African spice, brioche buns.">
+        content="Yaab Burgers – berbere fried chicken burgers. Crispy thighs, East African spice, brioche buns.">
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +17,7 @@
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="logo">
+        <!-- IMPORTANT: this path MUST match your repo structure -->
         <img src="assets/images/yaab-burgers-logo.png" alt="Yaab Burgers logo" />
       </a>
 
@@ -27,10 +28,10 @@
       <nav id="mainNav" class="nav">
         <ul>
           <li><a href="index.html" class="nav-link active">Home</a></li>
-          <li><a href="menu.html" class="nav-link">Menu</a></li>
-          <li><a href="story.html" class="nav-link">Our Story</a></li>
-          <li><a href="visit-contact.html" class="nav-link">Visit / Contact</a></li>
-          <li><a href="visit-contact.html#order" class="nav-link nav-cta">Order now</a></li>
+          <li><a href="#menu" class="nav-link">Menu</a></li>
+          <li><a href="#story" class="nav-link">Our Story</a></li>
+          <li><a href="#visit" class="nav-link">Visit / Contact</a></li>
+          <li><a href="#order" class="nav-link nav-cta">Order now</a></li>
         </ul>
       </nav>
     </div>
@@ -54,8 +55,8 @@
           </p>
 
           <div class="hero-actions">
-            <a href="menu.html" class="btn btn-primary">View the menu</a>
-            <a href="visit-contact.html#order" class="btn btn-outline">Delivery &amp; collection</a>
+            <a href="#menu" class="btn btn-primary">View the menu</a>
+            <a href="#visit" class="btn btn-outline">Delivery &amp; collection</a>
           </div>
 
           <p class="hero-footnote">
@@ -81,44 +82,127 @@
       </div>
     </section>
 
-    <!-- HIGHLIGHTS -->
-    <section class="strip strip-highlights">
-      <div class="container highlights-grid">
-        <article>
-          <h3>Berbere at the centre</h3>
-          <p>Our in-house sauce starts with East African berbere spice, layered with lemon,
-             tomato, honey, garlic and black pepper for heat, brightness and depth.</p>
-        </article>
-        <article>
-          <h3>Thighs only</h3>
-          <p>We use boneless chicken thighs – juicy, flavourful and strong enough to stand up
-             to the spice. Coated and fried to order, never reheated.</p>
-        </article>
-        <article>
-          <h3>Built for repeatability</h3>
-          <p>Standardised recipes and portioning make Yaab ideal for dark kitchens and busy
-             service, without losing the soul of the food.</p>
-        </article>
+    <!-- MENU SECTION -->
+    <section class="content-section" id="menu">
+      <div class="container">
+        <h2 class="section-heading">Menu</h2>
+        <p class="page-hero-sub">
+          A focused line-up built around berbere fried chicken. Update prices when you go live.
+        </p>
+
+        <h3 class="section-heading">Burgers</h3>
+        <div class="menu-list">
+          <article>
+            <div class="menu-row">
+              <h3>Berbere Fillet Burger</h3>
+              <span class="price">9.5</span>
+            </div>
+            <p>Crispy fried chicken thigh dipped in house berbere sauce, charred slaw,
+               pickles &amp; berbere mayo in a toasted brioche bun.</p>
+          </article>
+
+          <article>
+            <div class="menu-row">
+              <h3>Double Berbere Fillet</h3>
+              <span class="price">12.5</span>
+            </div>
+            <p>Two crispy chicken thighs, extra berbere sauce, slaw, pickles &amp;
+               berbere mayo.</p>
+          </article>
+
+          <article>
+            <div class="menu-row">
+              <h3>Heatwave Burger</h3>
+              <span class="price">10.5</span>
+            </div>
+            <p>Berbere-dipped chicken with chilli honey, shredded lettuce &amp; pickles.</p>
+          </article>
+
+          <article>
+            <div class="menu-row">
+              <h3>Shumbaro Veg Burger (VG)</h3>
+              <span class="price">9.0</span>
+            </div>
+            <p>Spiced chickpea &amp; paprika patty with berbere sauce, slaw, pickles
+               &amp; vegan mayo.</p>
+          </article>
+        </div>
+
+        <h3 class="section-heading">Sides</h3>
+        <div class="menu-list">
+          <article>
+            <div class="menu-row">
+              <h3>Charred Slaw (GF / V)</h3>
+              <span class="price">3</span>
+            </div>
+            <p>Cabbage, carrot, spring onion &amp; charred corn with berbere dressing.</p>
+          </article>
+
+          <article>
+            <div class="menu-row">
+              <h3>Spiced Fries (GF / VG)</h3>
+              <span class="price">3.5</span>
+            </div>
+            <p>Crispy fries tossed in berbere salt.</p>
+          </article>
+
+          <article>
+            <div class="menu-row">
+              <h3>Pickles (GF / VG)</h3>
+              <span class="price">2</span>
+            </div>
+            <p>House pickled cucumber &amp; onion.</p>
+          </article>
+        </div>
+
+        <h3 class="section-heading">Drinks</h3>
+        <div class="menu-list small">
+          <article>
+            <div class="menu-row">
+              <h3>Karma Cola</h3>
+              <span class="price">2</span>
+            </div>
+          </article>
+          <article>
+            <div class="menu-row">
+              <h3>Watermelon Chilli Soda</h3>
+              <span class="price">2.5</span>
+            </div>
+          </article>
+          <article>
+            <div class="menu-row">
+              <h3>Mint Lemonade</h3>
+              <span class="price">2.5</span>
+            </div>
+          </article>
+        </div>
+
+        <h3 class="section-heading">Desserts</h3>
+        <div class="menu-list small">
+          <article>
+            <div class="menu-row">
+              <h3>Brownie &amp; Ice Cream</h3>
+              <span class="price">5</span>
+            </div>
+          </article>
+          <article>
+            <div class="menu-row">
+              <h3>Tiramisu</h3>
+              <span class="price">4</span>
+            </div>
+          </article>
+        </div>
+
+        <p class="allergen-note">
+          All dishes may contain traces of nuts, milk, wheat, fish, eggs and soybean.
+          Please speak to us about allergies. All dishes are Halal.
+        </p>
       </div>
     </section>
 
-    <!-- TEASER SECTIONS -->
-    <section class="content-section">
+    <!-- STORY -->
+    <section class="content-section" id="story">
       <div class="container two-col">
-        <div>
-          <h2>Menu highlights</h2>
-          <p>
-            A tight, focused line-up built around our berbere fillet. No 50-item menu here –
-            just the good stuff dialled in properly.
-          </p>
-          <ul class="bullet-list">
-            <li>Berbere Fillet Burger &amp; Double Berbere Fillet</li>
-            <li>Heatwave Burger with chilli honey</li>
-            <li>Shumbaro Veg Burger (VG)</li>
-            <li>Charred slaw, berbere fries &amp; house pickles</li>
-          </ul>
-          <a class="text-link" href="menu.html">See the full menu &rarr;</a>
-        </div>
         <div>
           <h2>The Yaab story</h2>
           <p>
@@ -126,11 +210,115 @@
             fried-chicken world. Familiar format, different energy.
           </p>
           <p>
-            From the sauce recipe to the kitchen layout, everything is designed so your
-            burger tastes the same on a quiet Tuesday as it does late on a Saturday.
+            Our in-house berbere sauce is built on carefully measured spice, fresh lemon
+            juice, tomato, honey, black pepper, garlic and a mix of fats for body.
+            Every batch is weighed and logged.
           </p>
-          <a class="text-link" href="story.html">Read our story &rarr;</a>
         </div>
+        <div>
+          <h2>Built for repeatability</h2>
+          <p>
+            Behind the flavour, Yaab is all about clean systems: standardised recipes,
+            portioning guides and a tight menu keep service sharp and waste low.
+          </p>
+          <ul class="bullet-list">
+            <li>Dark kitchens focused on delivery.</li>
+            <li>Compact high-street sites with strong evening trade.</li>
+            <li>Partnership kitchens in pubs or food halls.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- VISIT / CONTACT -->
+    <section class="content-section" id="visit">
+      <div class="container info-grid">
+        <article class="info-card">
+          <h2>Flagship kitchen</h2>
+          <p>
+            Example address (update this):<br/>
+            Unit 1, Eastgate<br/>
+            Bristol, BSX XXX
+          </p>
+          <ul class="info-list">
+            <li>Collection &amp; delivery available</li>
+            <li>Cooked to order, no reheats</li>
+          </ul>
+        </article>
+
+        <article class="info-card">
+          <h2>Opening hours</h2>
+          <ul class="info-list">
+            <li>Mon–Thu · 5pm – 10pm</li>
+            <li>Fri–Sat · 5pm – 11pm</li>
+            <li>Sun · 5pm – 9pm</li>
+          </ul>
+          <p class="info-small">Adjust these to your real trading hours.</p>
+        </article>
+
+        <article class="info-card" id="order">
+          <h2>Order Yaab Burgers</h2>
+          <p>Replace the links below when you’re live on delivery platforms.</p>
+          <ul class="info-list">
+            <li>Deliveroo – link coming soon</li>
+            <li>Uber Eats – link coming soon</li>
+            <li>Just Eat – link coming soon</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container contact-layout">
+        <form class="contact-form"
+              action="mailto:hello@yaabburgers.com"
+              method="POST"
+              enctype="text/plain">
+          <h2>Contact &amp; enquiries</h2>
+
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+          </div>
+
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+          </div>
+
+          <div class="form-row">
+            <label for="type">Enquiry type</label>
+            <select id="type" name="type">
+              <option>General question</option>
+              <option>Large order / catering</option>
+              <option>Partnership / dark kitchen</option>
+              <option>Press / media</option>
+            </select>
+          </div>
+
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary">Send message</button>
+          <p class="form-note">
+            This uses your email app via <code>mailto:</code>. For a proper form with
+            confirmations, connect it to Formspree, Netlify Forms or similar.
+          </p>
+        </form>
+
+        <aside class="contact-aside">
+          <h2>Direct contact</h2>
+          <p>
+            Email: <a href="mailto:hello@yaabburgers.com">hello@yaabburgers.com</a><br />
+            Instagram: <a href="https://instagram.com/yaabburgers">@yaabburgers</a><br />
+            Phone: 0000 000 000 (update with your number)
+          </p>
+          <p class="contact-small">
+            We usually reply to partnership and event enquiries within 24–48 hours.
+          </p>
+        </aside>
       </div>
     </section>
   </main>
