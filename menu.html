@@ -62,15 +62,25 @@
         display:grid;place-items:center
       }
 
-      /* Menu card */
+      /* Menu card (NOTICEABLY SMALLER BUT STILL BIG) */
       .menu-card{
-        width:min(920px,100%);
+        width:min(780px, 100%);          /* <- reduced from 920px */
         background:#fff;color:#111;
         border-radius:6px;
         box-shadow:0 18px 60px rgba(0,0,0,.55);
-        padding:26px
+        padding:22px;                    /* slightly tighter */
       }
-      .menu-image{width:100%;height:auto;display:block}
+
+      .menu-image{
+        width:100%;
+        height:auto;
+        display:block;
+      }
+
+      /* Optional: on large screens, give it a touch more breathing room vertically */
+      @media (min-width: 900px){
+        .page-bg{ padding:70px 0 110px; }
+      }
     </style>
   </head>
 
@@ -78,7 +88,6 @@
     <header class="site-header">
       <div class="container header-inner">
         <a class="brand" href="/index.html">
-          <!-- ✅ FIXED: exact filename + root path -->
           <img
             src="/assets/images/yaab-burgers-logo.png"
             alt="YAAB Burgers"
@@ -99,7 +108,6 @@
 
     <main class="page-bg">
       <div class="menu-card">
-        <!-- ✅ FIXED: exact filename + root path -->
         <img
           src="/assets/images/yaab-menu.png"
           alt="YAAB Burgers Menu"
