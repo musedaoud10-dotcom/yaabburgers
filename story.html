@@ -1,86 +1,173 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Our Story | Yaab Burgers</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description"
-        content="The story behind Yaab Burgers – bold flavours inspired by the Horn of Africa and rooted in Bristol.">
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
-</head>
-<body class="page-story">
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">
-        <img src="assets/images/yaab-burgers-logo.png" alt="Yaab Burgers logo" />
-      </a>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="mainNav" class="nav">
-        <ul>
-          <li><a href="menu.html" class="nav-link">Menu</a></li>
-          <li><a href="story.html" class="nav-link active">About</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="#" class="nav-link nav-cta">Order here</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Our Story | YAAB Burgers</title>
 
-  <main>
-    <section id="our-story" class="story">
-      <div class="container">
-        <h1>Our Story</h1>
+    <style>
+      :root{
+        --bg:#000;
+        --text:#fff;
+        --muted:rgba(255,255,255,.75);
+        --border:rgba(255,255,255,.22);
+        --accent:#d6b15a;
+      }
+      *{box-sizing:border-box}
+      html,body{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+      .container{width:min(1100px,calc(100% - 40px));margin:0 auto}
+
+      /* Header */
+      .site-header{
+        position:sticky;top:0;z-index:50;
+        background:#000;border-bottom:1px solid rgba(255,255,255,.08)
+      }
+      .header-inner{
+        display:flex;align-items:center;justify-content:space-between;
+        padding:14px 0;gap:16px
+      }
+      .brand{display:inline-flex;align-items:center;text-decoration:none}
+      .brand-logo{
+        display:block;height:44px;width:auto;
+        background:transparent !important;border:0;box-shadow:none
+      }
+
+      .nav{display:flex;align-items:center;gap:26px}
+      .nav a{
+        color:var(--muted);text-decoration:none;
+        letter-spacing:.18em;font-size:12px;padding:10px 0
+      }
+      .nav a:hover{color:var(--text)}
+      .nav a.active{color:var(--text);position:relative}
+      .nav a.active::after{
+        content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;
+        background:var(--accent);border-radius:2px
+      }
+
+      .btn{
+        display:inline-flex;align-items:center;justify-content:center;
+        padding:10px 16px;border-radius:999px;font-size:12px;
+        letter-spacing:.16em;text-decoration:none;user-select:none
+      }
+      .btn-outline{color:var(--text)!important;border:1px solid var(--border);background:transparent}
+      .btn-outline:hover{border-color:rgba(255,255,255,.5)}
+
+      /* Page */
+      .story-wrap{
+        padding:46px 0 36px;
+      }
+
+      .story-title{
+        margin:0 0 14px;
+        font-size:28px;
+        font-weight:700;
+      }
+
+      /* ✅ 2-column story text */
+      .story-columns{
+        column-count: 2;
+        column-gap: 46px;
+        max-width: 980px;
+        line-height: 1.55;
+        font-size: 16px;
+        color: rgba(255,255,255,.9);
+      }
+      .story-columns p{
+        margin: 0 0 14px;
+        break-inside: avoid;
+      }
+
+      /* Mobile: back to 1 column */
+      @media (max-width: 900px){
+        .story-columns{ column-count:1; }
+      }
+
+      /* Footer */
+      .site-footer{
+        border-top:1px solid rgba(255,255,255,.08);
+        padding:18px 0;
+        color:rgba(255,255,255,.55);
+        font-size:13px;
+      }
+      .footer-inner{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        gap:16px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/index.html">
+          <img
+            src="/assets/images/yaab-burgers-logo.png"
+            alt="YAAB Burgers"
+            class="brand-logo"
+          />
+        </a>
+
+        <nav class="nav">
+          <a href="/menu.html">MENU</a>
+          <a class="active" href="/story.html">ABOUT</a>
+          <a href="/contact.html">CONTACT</a>
+          <a class="btn btn-outline" href="https://your-order-link-here" target="_blank" rel="noopener">
+            ORDER HERE
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container story-wrap">
+      <h1 class="story-title">Our Story</h1>
+
+      <div class="story-columns">
         <p>
-          Our journey with food started long before Yaab Burgers was even an idea. It began in busy family
-          kitchens – the smell of spices simmering, pans sizzling, and everyone moving around the stove like
-          it was second nature. We grew up around restaurants and home kitchens in Hull and Bristol, where
-          food was never just dinner; it was culture, family, and the way we showed love.
+          Our journey with food started long before Yaab Burgers was even an idea. It began in busy family kitchens
+          – the smell of spices simmering, pans sizzling, and everyone moving around the stove like it was second nature.
+          We grew up around restaurants and home kitchens, where food was never just dinner; it was culture, family, and
+          the way we showed love.
         </p>
+
         <p>
-          From early on, we were the ones who couldn’t leave recipes alone. We’d step into the kitchen to
-          remix the dishes we knew, throw in something unexpected and see what happened. That curiosity – and
-          confidence with big, layered flavours – is the heart of Yaab Burgers.
+          From early on, we were the ones who couldn’t leave recipes alone. We’d step into the kitchen to remix the dishes
+          we knew, throw in something unexpected and see what happened. That curiosity – and confidence with big, layered
+          flavours – is the heart of Yaab Burgers.
         </p>
+
         <p>
-          One of the flavours that shaped us comes from the Horn of Africa – a deep, warming spice blend that
-          instantly transforms whatever it touches. It was the kind of seasoning that found its way into
-          everything: marinades, slow-cooked dishes, even house sauces. It taught us how much character a
-          single blend of spices can bring to a plate.
+          One of the flavours that shaped us comes from the Horn of Africa – a deep, warming spice blend that instantly
+          transforms whatever it touches. It was the kind of seasoning that found its way into everything: marinades,
+          slow-cooked dishes, even house sauces. It taught us how much character a single blend of spices can bring to a plate.
         </p>
+
         <p>
-          Yaab Burgers was born from the idea of taking those bold, nostalgic flavours and building something
-          modern around them: fried chicken, burgers and sides that feel familiar at first bite, but reveal
-          something more with every chew. Crispy chicken dipped in our house spice sauce, soft buns, sharp
-          pickles and proper punchy condiments – all designed to carry that flavour story forward.
+          Yaab Burgers was born from the idea of taking those bold, nostalgic flavours and building something modern around them:
+          crisp fried chicken, proper burgers and sides that feel familiar at first bite, but reveal something more with every chew.
+          Spice-forward sauces, soft buns, sharp pickles and punchy condiments – all designed to carry that flavour story forward.
         </p>
+
         <p>
-          The name “Yaab” comes from a word that captures a feeling of astonishment and surprise – that moment
-          when something tastes better than you were expecting. That’s exactly how we want people to feel when
-          they bite into our food: a little caught off guard, in the best possible way.
+          The name “Yaab” comes from a word that captures a feeling of astonishment and surprise – that moment when something tastes
+          better than you were expecting. That’s exactly how we want people to feel when they bite into our food: a little caught
+          off guard, in the best possible way.
         </p>
+
         <p>
-          Today, Yaab Burgers is a small team with big flavours. We’re rooted in the food traditions we grew up
-          with, inspired by the Horn of Africa and shaped by the cities we’ve called home. Every service is an
-          opportunity to share that story – one burger, one box of fried chicken, one “wait… what is this?”
-          reaction at a time.
+          Today, Yaab Burgers is a small team with big flavours. We’re rooted in the food traditions we grew up with, inspired by the
+          Horn of Africa, and shaped by every service we do. Every pop-up is another chance to share that story – one burger, one box
+          of fried chicken, and one “I need that again” moment at a time.
         </p>
       </div>
-    </section>
-  </main>
+    </main>
 
-  <footer>
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Yaab Burgers. All rights reserved.</span>
-      <span>Berbere fried chicken burgers.</span>
-    </div>
-  </footer>
-
-  <script src="assets/js/main.js"></script>
-</body>
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>© 2025 Yaab Burgers. All rights reserved.</div>
+        <div>Berbere fried chicken burgers.</div>
+      </div>
+    </footer>
+  </body>
 </html>
