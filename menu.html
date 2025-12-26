@@ -3,163 +3,93 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Menu | Yaab Burgers</title>
+    <title>Menu | YAAB Burgers</title>
 
     <style>
-      :root {
-        --bg: #000;
-        --text: #fff;
-        --muted: rgba(255, 255, 255, 0.75);
-        --border: rgba(255, 255, 255, 0.22);
-        --accent: #d6b15a;
+      :root{
+        --bg:#000;
+        --text:#fff;
+        --muted:rgba(255,255,255,.75);
+        --border:rgba(255,255,255,.22);
+        --accent:#d6b15a;
+      }
+      *{box-sizing:border-box}
+      html,body{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
+      .container{width:min(1100px,calc(100% - 40px));margin:0 auto}
+
+      /* Header */
+      .site-header{
+        position:sticky;top:0;z-index:50;
+        background:#000;border-bottom:1px solid rgba(255,255,255,.08)
+      }
+      .header-inner{
+        display:flex;align-items:center;justify-content:space-between;
+        padding:14px 0;gap:16px
+      }
+      .brand{display:inline-flex;align-items:center;text-decoration:none}
+      .brand-logo{
+        display:block;height:44px;width:auto;
+        background:transparent !important;border:0;box-shadow:none
       }
 
-      * { box-sizing: border-box; }
-
-      html, body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, Helvetica, sans-serif;
-        background: var(--bg);
-        color: var(--text);
+      .nav{display:flex;align-items:center;gap:26px}
+      .nav a{
+        color:var(--muted);text-decoration:none;
+        letter-spacing:.18em;font-size:12px;padding:10px 0
+      }
+      .nav a:hover{color:var(--text)}
+      .nav a.active{color:var(--text);position:relative}
+      .nav a.active::after{
+        content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;
+        background:var(--accent);border-radius:2px
       }
 
-      .container {
-        width: min(1100px, calc(100% - 40px));
-        margin: 0 auto;
+      .btn{
+        display:inline-flex;align-items:center;justify-content:center;
+        padding:10px 16px;border-radius:999px;font-size:12px;
+        letter-spacing:.16em;text-decoration:none;user-select:none
       }
+      .btn-outline{color:var(--text)!important;border:1px solid var(--border);background:transparent}
+      .btn-outline:hover{border-color:rgba(255,255,255,.5)}
 
-      .site-header {
-        position: sticky;
-        top: 0;
-        z-index: 50;
-        background: #000;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-      }
-
-      .header-inner {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 14px 0;
-        gap: 16px;
-      }
-
-      .brand {
-        display: inline-flex;
-        align-items: center;
-        text-decoration: none;
-      }
-
-      .brand-logo {
-        display: block;
-        height: 44px;
-        width: auto;
-        background: transparent !important;
-        border: 0;
-        box-shadow: none;
-      }
-
-      .nav {
-        display: flex;
-        align-items: center;
-        gap: 26px;
-      }
-
-      .nav a {
-        color: var(--muted);
-        text-decoration: none;
-        letter-spacing: 0.18em;
-        font-size: 12px;
-        padding: 10px 0;
-      }
-
-      .nav a:hover { color: var(--text); }
-
-      .nav a.active {
-        color: var(--text);
-        position: relative;
-      }
-
-      .nav a.active::after {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 2px;
-        height: 2px;
-        background: var(--accent);
-        border-radius: 2px;
-      }
-
-      .btn {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        padding: 10px 16px;
-        border-radius: 999px;
-        font-size: 12px;
-        letter-spacing: 0.16em;
-        text-decoration: none;
-        user-select: none;
-      }
-
-      .btn-outline {
-        color: var(--text) !important;
-        border: 1px solid var(--border);
-        background: transparent;
-      }
-
-      .btn-outline:hover {
-        border-color: rgba(255, 255, 255, 0.5);
-      }
-
-      .page-bg {
-        min-height: calc(100vh - 76px);
-        padding: 60px 0 90px;
+      /* Page background */
+      .page-bg{
+        min-height:calc(100vh - 76px);
+        padding:60px 0 90px;
         background:
-          radial-gradient(closest-side at 50% 40%, rgba(120, 60, 0, 0.18), rgba(0, 0, 0, 0.95)),
-          linear-gradient(120deg, rgba(0,0,0,0.95), rgba(60, 20, 0, 0.22));
-        display: grid;
-        place-items: center;
+          radial-gradient(closest-side at 50% 40%, rgba(120,60,0,.18), rgba(0,0,0,.95)),
+          linear-gradient(120deg, rgba(0,0,0,.95), rgba(60,20,0,.22));
+        display:grid;place-items:center
       }
 
-      .menu-card {
-        width: min(920px, 100%);
-        background: #fff;
-        color: #111;
-        border-radius: 6px;
-        box-shadow: 0 18px 60px rgba(0, 0, 0, 0.55);
-        padding: 26px;
+      /* Menu card */
+      .menu-card{
+        width:min(920px,100%);
+        background:#fff;color:#111;
+        border-radius:6px;
+        box-shadow:0 18px 60px rgba(0,0,0,.55);
+        padding:26px
       }
-
-      .menu-image {
-        width: 100%;
-        height: auto;
-        display: block;
-      }
-
-      .menu-actions {
-        margin-top: 16px;
-        display: flex;
-        justify-content: center;
-      }
+      .menu-image{width:100%;height:auto;display:block}
     </style>
   </head>
 
   <body>
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html">
-          <!-- FIXED PATH -->
-          <img src="assets/images/logo.png" alt="YAAB Burgers" class="brand-logo" />
+        <a class="brand" href="/index.html">
+          <!-- ✅ FIXED: exact filename + root path -->
+          <img
+            src="/assets/images/yaab-burgers-logo.png"
+            alt="YAAB Burgers"
+            class="brand-logo"
+          />
         </a>
 
         <nav class="nav">
-          <a class="active" href="menu.html">MENU</a>
-          <!-- FIXED: your repo uses story.html -->
-          <a href="story.html">ABOUT</a>
-          <a href="contact.html">CONTACT</a>
+          <a class="active" href="/menu.html">MENU</a>
+          <a href="/story.html">ABOUT</a>
+          <a href="/contact.html">CONTACT</a>
           <a class="btn btn-outline" href="https://your-order-link-here" target="_blank" rel="noopener">
             ORDER HERE
           </a>
@@ -169,18 +99,13 @@
 
     <main class="page-bg">
       <div class="menu-card">
-        <picture>
-          <!-- FIXED PATHS -->
-          <source srcset="assets/images/yaab-menu.webp" type="image/webp" />
-          <img src="assets/images/yaab-menu.png" alt="YAAB Burgers Menu" class="menu-image" />
-        </picture>
-
-        <!-- Optional PDF download (only works if you upload it) -->
-        <div class="menu-actions">
-          <a class="btn btn-outline" href="assets/images/YAAB-MENU-COMPLETE.pdf" target="_blank" rel="noopener">
-            DOWNLOAD PDF
-          </a>
-        </div>
+        <!-- ✅ FIXED: exact filename + root path -->
+        <img
+          src="/assets/images/yaab-menu.png"
+          alt="YAAB Burgers Menu"
+          class="menu-image"
+          loading="lazy"
+        />
       </div>
     </main>
   </body>
