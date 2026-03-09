@@ -1,81 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Menu | Yaab Burgers</title>
-  <link rel="stylesheet" href="assets/css/style.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Yaab Burgers Menu</title>
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
-  <header class="site-header">
-    <div class="container header-inner">
-      <a href="index.html" class="logo">
-        <img src="assets/images/yaab-burgers-logo.png" alt="Yaab Burgers logo" />
-      </a>
-      <button class="nav-toggle" aria-label="Toggle navigation">
-        <span></span><span></span><span></span>
-      </button>
-      <nav id="mainNav" class="nav">
-        <ul>
-          <li><a href="index.html" class="nav-link">Home</a></li>
-          <li><a href="menu.html" class="nav-link active">Menu</a></li>
-          <li><a href="story.html" class="nav-link">About</a></li>
-          <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="contact.html" class="nav-link nav-cta">Order now</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
 
-  <main class="page-menu">
-    <section class="menu-sheet-section">
-      <div class="menu-sheet-wrapper">
-        <img
-          src="assets/images/yaab-menu.png"
-          alt="YAAB Burgers Menu"
-          class="menu-image"
-          loading="lazy"
-        />
-      </div>
-    </section>
+<section class="menu-section">
 
-    <!-- ORDER ONLINE SECTION -->
-    <section class="order-online-section">
-      <div class="container">
-        <h2>Order Online</h2>
-        <p>Find us on your favourite delivery platforms</p>
-        <div class="order-platforms">
-          <a href="https://www.ubereats.com" target="_blank" rel="noopener" class="order-platform-btn">
-            <img src="assets/images/ubereats-logo.png" alt="Uber Eats" class="platform-logo" />
-            <span>Uber Eats</span>
-          </a>
-          <a href="https://www.just-eat.co.uk" target="_blank" rel="noopener" class="order-platform-btn">
-            <img src="assets/images/justeat-logo.png" alt="Just Eat" class="platform-logo" />
-            <span>Just Eat</span>
-          </a>
-          <a href="https://deliveroo.co.uk" target="_blank" rel="noopener" class="order-platform-btn">
-            <img src="assets/images/deliveroo-logo.png" alt="Deliveroo" class="platform-logo" />
-            <span>Deliveroo</span>
-          </a>
-          <a href="contact.html" class="order-platform-btn">
-            <span class="phone-icon">☎️</span>
-            <span>Call & Collect</span>
-          </a>
-        </div>
-      </div>
-    </section>
-  </main>
+<h1 class="menu-title">Our Menu</h1>
 
-  <footer>
-    <div class="container footer-inner">
-      <span>© <span id="year"></span> Yaab Burgers. All rights reserved.</span>
-      <span>Berbere fried chicken burgers.</span>
-    </div>
-  </footer>
+<div class="menu-tabs">
 
-  <script src="assets/js/main.js"></script>
+<button class="tab active" data-tab="combos">Combos</button>
+<button class="tab" data-tab="sides">Sides & Dips</button>
+<button class="tab" data-tab="drinks">Drinks</button>
+
+</div>
+
+
+<div class="menu-content">
+
+
+<!-- COMBOS -->
+
+<div class="menu-category active" id="combos">
+
+<div class="menu-item">
+
+<div class="menu-info">
+
+<h3>Berbere Burger</h3>
+
+<p>
+Buttermilk marinated crispy chicken fillet dipped in berbere sauce,
+served with pickles in a toasted brioche bun.
+</p>
+
+</div>
+
+<span class="price">£10.99</span>
+
+</div>
+
+
+<div class="menu-item">
+
+<div class="menu-info">
+
+<h3>Berbere Tenders</h3>
+
+<p>
+Two berbere dipped chicken tenders served with fries,
+pickles and yaab dip.
+</p>
+
+</div>
+
+<span class="price">£9.99</span>
+
+</div>
+
+</div>
+
+
+
+<!-- SIDES -->
+
+<div class="menu-category" id="sides">
+
+<div class="menu-item">
+
+<div class="menu-info">
+
+<h3>Classic Fries</h3>
+
+<p>Crispy golden fries</p>
+
+</div>
+
+<span class="price">£2.99</span>
+
+</div>
+
+
+<div class="menu-item">
+
+<div class="menu-info">
+
+<h3>Yaab Dip</h3>
+
+<p>Signature spicy sauce</p>
+
+</div>
+
+<span class="price">£0.99</span>
+
+</div>
+
+</div>
+
+
+
+<!-- DRINKS -->
+
+<div class="menu-category" id="drinks">
+
+<div class="menu-item">
+
+<div class="menu-info">
+
+<h3>Barr Cola / Lemonade</h3>
+
+</div>
+
+<span class="price">£1.49</span>
+
+</div>
+
+
+<div class="menu-item">
+
+<div class="menu-info">
+
+<h3>Rio</h3>
+
+</div>
+
+<span class="price">£1.49</span>
+
+</div>
+
+
+<div class="menu-item">
+
+<div class="menu-info">
+
+<h3>Still Water</h3>
+
+</div>
+
+<span class="price">£1.00</span>
+
+</div>
+
+</div>
+
+
+</div>
+
+</section>
+
+
+<script src="script.js"></script>
+
 </body>
 </html>
