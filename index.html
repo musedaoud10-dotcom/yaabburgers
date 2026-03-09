@@ -4,13 +4,11 @@
   <meta charset="UTF-8" />
   <title>Yaab Burgers | Berbere Fried Chicken</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description"
-        content="Yaab Burgers – berbere fried chicken burgers in Bristol.">
+  <meta name="description" content="Yaab Burgers – berbere fried chicken burgers in Bristol. Award-winning spiced chicken burgers with bold, punchy flavours.">
   <link rel="stylesheet" href="assets/css/style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 </head>
 <body class="page-home">
   <!-- HEADER -->
@@ -26,24 +24,89 @@
 
       <nav id="mainNav" class="nav">
         <ul>
+          <li><a href="index.html" class="nav-link active">Home</a></li>
           <li><a href="menu.html" class="nav-link">Menu</a></li>
           <li><a href="story.html" class="nav-link">About</a></li>
           <li><a href="contact.html" class="nav-link">Contact</a></li>
-          <li><a href="#" class="nav-link nav-cta">Order here</a></li>
+          <li><a href="#order-cta" class="nav-link nav-cta">Order now</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- MINIMAL HERO -->
+  <!-- HERO -->
   <main>
-    <section class="hero hero-home">
+    <section class="hero hero-home" id="hero">
       <div class="hero-inner">
-        <!-- hidden for SEO/accessibility -->
         <h1>Yaab Burgers</h1>
+        <p class="hero-title">Burgers with a Twist</p>
+        <p class="hero-subtitle">Bold berbere spice. Crispy fried chicken. Unforgettable bites.</p>
+        <div class="hero-ctas">
+          <a href="menu.html" class="btn btn-primary">Explore Menu</a>
+          <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+    </section>
 
-        <p>Burgers with a Twist</p>
-        <a href="menu.html" class="btn btn-outline hero-cta">View menu</a>
+    <!-- HIGHLIGHTS SECTION -->
+    <section class="highlights-section">
+      <div class="container">
+        <div class="highlights-grid">
+          <div class="highlight-card">
+            <div class="highlight-icon">🌶️</div>
+            <h3>Bold Spices</h3>
+            <p>Berbere-forward sauces with punchy, complex flavours that linger long after your last bite.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🍗</div>
+            <h3>Crispy Fried</h3>
+            <p>Golden, crackly fried chicken prepared fresh daily with our signature seasoning blend.</p>
+          </div>
+          <div class="highlight-card">
+            <div class="highlight-icon">🎯</div>
+            <h3>Heritage Food</h3>
+            <p>Inspired by mixed heritage and global travels. Every burger tells a story of flavour.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS SECTION -->
+    <section class="testimonials-section">
+      <div class="container">
+        <h2 class="section-title">What People Say</h2>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"The best burger I've had in Bristol. The berbere sauce is incredible!"</p>
+            <strong>— Sarah M.</strong>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"Unique flavours, perfectly executed. Worth the wait at every pop-up."</p>
+            <strong>— James K.</strong>
+          </div>
+          <div class="testimonial-card">
+            <div class="stars">★★★★★</div>
+            <p>"My friends and I are obsessed. This is not your average burger joint."</p>
+            <strong>— Emma T.</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDER CTA SECTION -->
+    <section class="order-cta-section" id="order-cta">
+      <div class="container">
+        <div class="order-cta-content">
+          <h2>Ready to Try Yaab?</h2>
+          <p>Order online from our next pop-up or book a private event</p>
+          <div class="order-buttons">
+            <a href="menu.html" class="btn btn-primary btn-lg">View Our Menu</a>
+            <a href="contact.html" class="btn btn-outline btn-lg">Book an Event</a>
+          </div>
+          <p class="order-subtitle">Opening: Wednesday – Sunday, 4pm – 10pm</p>
+        </div>
       </div>
     </section>
   </main>
@@ -51,8 +114,14 @@
   <!-- FOOTER -->
   <footer>
     <div class="container footer-inner">
-      <span>© <span id="year"></span> Yaab Burgers. All rights reserved.</span>
-      <span>Berbere fried chicken burgers.</span>
+      <div class="footer-content">
+        <span>© <span id="year"></span> Yaab Burgers. All rights reserved.</span>
+        <span>Berbere fried chicken burgers in Bristol.</span>
+      </div>
+      <div class="footer-social">
+        <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram">📱</a>
+        <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook">f</a>
+      </div>
     </div>
   </footer>
 
