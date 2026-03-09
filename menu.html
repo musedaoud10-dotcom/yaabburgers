@@ -31,193 +31,48 @@
   </header>
 
   <main class="page-menu">
-    <!-- MENU FILTERS -->
-    <div class="menu-filters-section">
-      <div class="container">
-        <div class="filter-buttons">
-          <button class="filter-btn active" data-filter="all">All Items</button>
-          <button class="filter-btn" data-filter="burgers">Burgers</button>
-          <button class="filter-btn" data-filter="chicken">Fried Chicken</button>
-          <button class="filter-btn" data-filter="sides">Sides</button>
-          <button class="filter-btn" data-filter="drinks">Drinks</button>
-        </div>
-      </div>
-    </div>
-
-    <!-- INTERACTIVE MENU -->
-    <section class="menu-section">
-      <div class="container">
-        <h1 class="page-title">Our Menu</h1>
-
-        <!-- BURGERS CATEGORY -->
-        <div class="menu-category" data-category="burgers">
-          <h2 class="category-title">Signature Burgers</h2>
-          <div class="menu-items-grid">
-            <div class="menu-item" data-filter="burgers">
-              <div class="menu-item-header">
-                <h3>The Yaab Burger</h3>
-                <span class="price">£12.50</span>
-              </div>
-              <p class="menu-description">Crispy fried chicken, berbere mayo, pickles, soft brioche. The one that started it all.</p>
-              <span class="dietary">🌶️ Spicy</span>
-            </div>
-
-            <div class="menu-item" data-filter="burgers">
-              <div class="menu-item-header">
-                <h3>Double Berbere</h3>
-                <span class="price">£14.50</span>
-              </div>
-              <p class="menu-description">Double fried chicken patties, berbere sauce, cheddar, jalapeños, crispy onions.</p>
-              <span class="dietary">🌶️ Extra Spicy</span>
-            </div>
-
-            <div class="menu-item" data-filter="burgers">
-              <div class="menu-item-header">
-                <h3>Smooth Operator</h3>
-                <span class="price">£11.50</span>
-              </div>
-              <p class="menu-description">Fried chicken, cooling cucumber mayo, fresh lettuce, tomato, soft bun. For the spice-cautious.</p>
-              <span class="dietary">🥒 Mild</span>
-            </div>
-
-            <div class="menu-item" data-filter="burgers">
-              <div class="menu-item-header">
-                <h3>The Heritage Stack</h3>
-                <span class="price">£15.50</span>
-              </div>
-              <p class="menu-description">Triple-layer: fried chicken, berbere slaw, cheddar, crispy bacon, special sauce.</p>
-              <span class="dietary">🌶️ Very Spicy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- FRIED CHICKEN CATEGORY -->
-        <div class="menu-category" data-category="chicken">
-          <h2 class="category-title">Fried Chicken</h2>
-          <div class="menu-items-grid">
-            <div class="menu-item" data-filter="chicken">
-              <div class="menu-item-header">
-                <h3>3-Piece Thighs</h3>
-                <span class="price">£9.50</span>
-              </div>
-              <p class="menu-description">Golden fried chicken thighs with berbere spice. Served with dipping sauce.</p>
-              <span class="dietary">🌶️ Spicy</span>
-            </div>
-
-            <div class="menu-item" data-filter="chicken">
-              <div class="menu-item-header">
-                <h3>5-Piece Tender Box</h3>
-                <span class="price">£11.50</span>
-              </div>
-              <p class="menu-description">Tender strips of fried chicken breast. Perfect for sharing or all for you.</p>
-              <span class="dietary">🌶️ Spicy</span>
-            </div>
-
-            <div class="menu-item" data-filter="chicken">
-              <div class="menu-item-header">
-                <h3>Mixed Platter</h3>
-                <span class="price">£13.50</span>
-              </div>
-              <p class="menu-description">Thighs, breast, and wings. The full experience of crispy fried chicken done right.</p>
-              <span class="dietary">🌶️ Spicy</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- SIDES CATEGORY -->
-        <div class="menu-category" data-category="sides">
-          <h2 class="category-title">Sides & Extras</h2>
-          <div class="menu-items-grid">
-            <div class="menu-item" data-filter="sides">
-              <div class="menu-item-header">
-                <h3>Spiced Fries</h3>
-                <span class="price">£3.50</span>
-              </div>
-              <p class="menu-description">Hand-cut fries tossed with berbere seasoning and garlic salt.</p>
-            </div>
-
-            <div class="menu-item" data-filter="sides">
-              <div class="menu-item-header">
-                <h3>Berbere Slaw</h3>
-                <span class="price">£2.50</span>
-              </div>
-              <p class="menu-description">Crisp cabbage slaw with spiced dressing to cut through the richness.</p>
-            </div>
-
-            <div class="menu-item" data-filter="sides">
-              <div class="menu-item-header">
-                <h3>Garlic Dip</h3>
-                <span class="price">£1.50</span>
-              </div>
-              <p class="menu-description">Cooling garlic mayo for dipping.</p>
-            </div>
-
-            <div class="menu-item" data-filter="sides">
-              <div class="menu-item-header">
-                <h3>Hot Sauce</h3>
-                <span class="price">£2.00</span>
-              </div>
-              <p class="menu-description">Extra berbere kick for the brave.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- DRINKS CATEGORY -->
-        <div class="menu-category" data-category="drinks">
-          <h2 class="category-title">Drinks</h2>
-          <div class="menu-items-grid">
-            <div class="menu-item" data-filter="drinks">
-              <div class="menu-item-header">
-                <h3>Soft Drink</h3>
-                <span class="price">£2.50</span>
-              </div>
-              <p class="menu-description">Coca-Cola, Sprite, Fanta, or local options.</p>
-            </div>
-
-            <div class="menu-item" data-filter="drinks">
-              <div class="menu-item-header">
-                <h3>Fresh Juice</h3>
-                <span class="price">£3.50</span>
-              </div>
-              <p class="menu-description">Orange, mango, or passionfruit. Freshly squeezed daily.</p>
-            </div>
-
-            <div class="menu-item" data-filter="drinks">
-              <div class="menu-item-header">
-                <h3>Bottled Water</h3>
-                <span class="price">£1.50</span>
-              </div>
-              <p class="menu-description">Still or sparkling.</p>
-            </div>
-
-            <div class="menu-item" data-filter="drinks">
-              <div class="menu-item-header">
-                <h3>Ethiopian Coffee</h3>
-                <span class="price">£3.00</span>
-              </div>
-              <p class="menu-description">Strong, aromatic heritage brew.</p>
-            </div>
-          </div>
-        </div>
+    <section class="menu-sheet-section">
+      <div class="menu-sheet-wrapper">
+        <img
+          src="assets/images/yaab-menu.png"
+          alt="YAAB Burgers Menu"
+          class="menu-image"
+          loading="lazy"
+        />
       </div>
     </section>
 
-    <!-- CTA SECTION -->
-    <section class="menu-cta-section">
+    <!-- ORDER ONLINE SECTION -->
+    <section class="order-online-section">
       <div class="container">
-        <h2>Ready to Order?</h2>
-        <p>Check back for our next pop-up date or book a private event</p>
-        <a href="contact.html" class="btn btn-primary btn-lg">Get in Touch</a>
+        <h2>Order Online</h2>
+        <p>Find us on your favourite delivery platforms</p>
+        <div class="order-platforms">
+          <a href="https://www.ubereats.com" target="_blank" rel="noopener" class="order-platform-btn">
+            <img src="assets/images/ubereats-logo.png" alt="Uber Eats" class="platform-logo" />
+            <span>Uber Eats</span>
+          </a>
+          <a href="https://www.just-eat.co.uk" target="_blank" rel="noopener" class="order-platform-btn">
+            <img src="assets/images/justeat-logo.png" alt="Just Eat" class="platform-logo" />
+            <span>Just Eat</span>
+          </a>
+          <a href="https://deliveroo.co.uk" target="_blank" rel="noopener" class="order-platform-btn">
+            <img src="assets/images/deliveroo-logo.png" alt="Deliveroo" class="platform-logo" />
+            <span>Deliveroo</span>
+          </a>
+          <a href="contact.html" class="order-platform-btn">
+            <span class="phone-icon">☎️</span>
+            <span>Call & Collect</span>
+          </a>
+        </div>
       </div>
     </section>
   </main>
 
   <footer>
     <div class="container footer-inner">
-      <div class="footer-content">
-        <span>© <span id="year"></span> Yaab Burgers. All rights reserved.</span>
-        <span>Berbere fried chicken burgers in Bristol.</span>
-      </div>
+      <span>© <span id="year"></span> Yaab Burgers. All rights reserved.</span>
+      <span>Berbere fried chicken burgers.</span>
     </div>
   </footer>
 
