@@ -1,175 +1,202 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Our Story | YAAB Burgers</title>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-      :root{
-        --bg:#000;
-        --text:#fff;
-        --muted:rgba(255,255,255,.75);
-        --border:rgba(255,255,255,.22);
-        --accent:#d6b15a;
-      }
-      *{box-sizing:border-box}
-      html,body{margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text)}
-      .container{width:min(1100px,calc(100% - 40px));margin:0 auto}
+<title>Our Story | Yaab Burgers</title>
 
-      /* Header */
-      .site-header{
-        position:sticky;top:0;z-index:50;
-        background:#000;border-bottom:1px solid rgba(255,255,255,.08)
-      }
-      .header-inner{
-        display:flex;align-items:center;justify-content:space-between;
-        padding:14px 0;gap:16px
-      }
-      .brand{display:inline-flex;align-items:center;text-decoration:none}
-      .brand-logo{
-        display:block;height:44px;width:auto;
-        background:transparent !important;border:0;box-shadow:none
-      }
+<meta
+name="description"
+content="Discover the story behind Yaab Burgers and our passion for berbere fried chicken burgers."
+>
 
-      .nav{display:flex;align-items:center;gap:26px}
-      .nav a{
-        color:var(--muted);text-decoration:none;
-        letter-spacing:.18em;font-size:12px;padding:10px 0
-      }
-      .nav a:hover{color:var(--text)}
-      .nav a.active{color:var(--text);position:relative}
-      .nav a.active::after{
-        content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;
-        background:var(--accent);border-radius:2px
-      }
+<link rel="stylesheet" href="assets/css/style.css">
 
-      .btn{
-        display:inline-flex;align-items:center;justify-content:center;
-        padding:10px 16px;border-radius:999px;font-size:12px;
-        letter-spacing:.16em;text-decoration:none;user-select:none
-      }
-      .btn-outline{color:var(--text)!important;border:1px solid var(--border);background:transparent}
-      .btn-outline:hover{border-color:rgba(255,255,255,.5)}
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-      /* Page */
-      .story-wrap{
-        padding:46px 0 36px;
-      }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
 
-      .story-title{
-        margin:0 0 14px;
-        font-size:28px;
-        font-weight:700;
-      }
+<body>
 
-      /* 2-column story text */
-      .story-columns{
-        column-count: 2;
-        column-gap: 46px;
-        max-width: 980px;
-        line-height: 1.55;
-        font-size: 16px;
-        color: rgba(255,255,255,.9);
-      }
-      .story-columns p{
-        margin: 0 0 14px;
-        break-inside: avoid;
-      }
+<header class="site-header">
 
-      /* Mobile */
-      @media (max-width: 900px){
-        .story-columns{ column-count:1; }
-      }
+<div class="container header-inner">
 
-      /* Footer */
-      .site-footer{
-        border-top:1px solid rgba(255,255,255,.08);
-        padding:18px 0;
-        color:rgba(255,255,255,.55);
-        font-size:13px;
-      }
-      .footer-inner{
-        display:flex;
-        align-items:center;
-        justify-content:space-between;
-        gap:16px;
-      }
-    </style>
-  </head>
+<a href="index.html" class="logo">
+<img src="assets/images/yaab-burgers-logo.png" alt="Yaab Burgers">
+</a>
 
-  <body>
-    <header class="site-header">
-      <div class="container header-inner">
-        <a class="brand" href="/index.html">
-          <img
-            src="/assets/images/yaab-burgers-logo.png"
-            alt="YAAB Burgers"
-            class="brand-logo"
-          />
-        </a>
+<nav class="nav">
+<ul>
+<li><a href="menu.html">Menu</a></li>
+<li><a href="story.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="#" class="nav-cta">Order Now</a></li>
+</ul>
+</nav>
 
-        <nav class="nav">
-          <a href="/menu.html">MENU</a>
-          <a class="active" href="/story.html">ABOUT</a>
-          <a href="/contact.html">CONTACT</a>
-          <a class="btn btn-outline" href="https://your-order-link-here" target="_blank" rel="noopener">
-            ORDER HERE
-          </a>
-        </nav>
-      </div>
-    </header>
+</div>
 
-    <main class="container story-wrap">
-      <h1 class="story-title">Our Story</h1>
+</header>
 
-      <div class="story-columns">
-        <p>
-          Our passion for food and flavour runs deep. Long before Yaab Burgers was ever an idea,
-          berbere was already a staple in our kitchen. Some of our earliest memories are of mixing
-          it with lime to create a bold, punchy paste — simple, intense, and unforgettable.
-          That curiosity for flavour became the foundation of everything we do.
-        </p>
+<main>
 
-        <p>
-          Our food is shaped by a mixed-heritage background and years of travelling, tasting food
-          across the globe and learning how different cultures use spice, balance, and heat.
-          We’re drawn to flavours that stand out — ones that feel familiar, yet slightly provocative.
-        </p>
+<section class="hero-home">
 
-        <p>
-          What started as a side project between brothers, cooking burgers for family and friends,
-          slowly became something bigger. Those early sessions in the kitchen were about more than
-          food — they were about sharing ideas, pushing flavours, and seeing how far we could take
-          something simple.
-        </p>
+<div class="container hero-content">
 
-        <p>
-          That spirit led to the berbere burger and eventually Yaab Burgers: a modern take on the
-          flavours we grew up with. Crisp fried chicken, proper burgers, spice-forward sauces,
-          soft buns, sharp pickles and punchy condiments — all built to carry that flavour story
-          forward.
-        </p>
+<span class="hero-tag">
+THE YAAB STORY
+</span>
 
-        <p>
-          The name “Yaab” captures a feeling of astonishment and surprise — that moment when something
-          tastes better than you expected. That’s exactly how we want people to feel when they take
-          their first bite: a little caught off guard, in the best possible way.
-        </p>
+<h1>
+Built Around Flavour.<br>
+Inspired By Heritage.
+</h1>
 
-        <p>
-          Today, Yaab Burgers is a small team with big flavours. We’re rooted in heritage, driven by
-          creativity, and shaped by every service we do. Every pop-up is another chance to share our
-          story — one burger, one box of fried chicken, and one “I need that again” moment at a time.
-        </p>
-      </div>
-    </main>
+<p>
+From childhood memories of berbere and lime to serving Bristol's boldest fried chicken burgers.
+</p>
 
-    <footer class="site-footer">
-      <div class="container footer-inner">
-        <div>© 2025 Yaab Burgers. All rights reserved.</div>
-        <div>Berbere fried chicken burgers.</div>
-      </div>
-    </footer>
-  </body>
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-heading">
+<h2>Where It Started</h2>
+</div>
+
+<div class="card">
+
+<p>
+Our passion for flavour runs deep. Long before Yaab Burgers was ever an idea,
+berbere was already a staple in our kitchen. Some of our earliest memories are
+of mixing it with lime to create a bold, punchy paste that left a lasting impression.
+</p>
+
+<p>
+Over time that curiosity became an obsession with flavour. We travelled, explored
+different cuisines and learned how cultures around the world use spice, heat and balance.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-heading">
+<h2>From Side Project To Yaab</h2>
+</div>
+
+<div class="card">
+
+<p>
+What started as brothers experimenting in the kitchen slowly became something bigger.
+Those early burger sessions were about more than food. They were about pushing flavours,
+testing ideas and creating something memorable.
+</p>
+
+<p>
+That journey led to the berbere burger and eventually Yaab Burgers — a modern take on
+the flavours that inspired us.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section delivery">
+
+<div class="container">
+
+<h2>What Does Yaab Mean?</h2>
+
+<p style="max-width:700px;margin:auto;">
+The name Yaab captures that moment of surprise when something tastes better than you expected.
+That feeling of being caught off guard in the best possible way is exactly what we aim to deliver
+with every burger.
+</p>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<div class="container">
+
+<div class="section-heading">
+<h2>Today</h2>
+</div>
+
+<div class="card">
+
+<p>
+Today Yaab Burgers is built around one simple idea:
+serve food packed with flavour and made with care.
+</p>
+
+<p>
+Every burger, every box of fried chicken and every order
+is another chance to create that unforgettable first bite.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section delivery">
+
+<div class="container">
+
+<h2>Ready To Try It?</h2>
+
+<p>
+Explore the menu and discover what makes Yaab different.
+</p>
+
+<a href="menu.html" class="btn btn-primary">
+View Menu
+</a>
+
+</div>
+
+</section>
+
+</main>
+
+<footer>
+
+<div class="container footer-inner">
+
+<div>
+<strong>Yaab Burgers</strong>
+<p>Bristol's home of berbere fried chicken burgers.</p>
+</div>
+
+<div>
+© 2026 Yaab Burgers
+</div>
+
+</div>
+
+</footer>
+
+</body>
 </html>
